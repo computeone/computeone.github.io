@@ -1,0 +1,55 @@
+11.3.3 Q-learning
+
+In Q-learning and related algorithms, an agent tries to learn the optimal policy from its history of interaction with the environment. A history of an agent is a sequence of state-action-rewards:
+
+
+**⟨s0,a0,r1,s1,a1,r2,s2,a2,r3,s3,a3,r4,s4...⟩,**
+
+which means that the agent was in state s0 and did action a0, which resulted in it receiving reward r1 and being in state s1; then it did action a1, received reward r2, and ended up in state s2; then it did action a2, received reward r3, and ended up in state s3; and so on.
+
+
+We treat this history of interaction as a sequence of experiences, where an experience is a tuple
+
+⟨s,a,r,s'⟩,
+
+which means that the agent was in state s, it did action a, it received reward r, and it went into state s'. These experiences will be the data from which the agent can learn what to do. As in decision-theoretic planning, the aim is for the agent to maximize its value, which is usually the discounted reward.
+
+Recall that Q*(s,a), where a is an action and s is a state, is the expected value (cumulative discounted reward) of doing a in state s and then following the optimal policy.
+
+
+Q-learning uses temporal differences to estimate the value of Q*(s,a). In Q-learning, the agent maintains a table of Q[S,A], where S is the set of states and A is the set of actions. Q[s,a] represents its current estimate of Q*(s,a).
+
+An experience ⟨s,a,r,s'⟩ provides one data point for the value of Q(s,a). The data point is that the agent received the future value of r+ γV(s'), where V(s') =maxa' Q(s',a'); this is the actual current reward plus the discounted estimated future value. This new data point is called a return. The agent can use the temporal difference equation (11.3.2) to update its estimate for Q(s,a):
+
+
+''Q[s,a] ←Q[s,a] + α(r+ γmaxa' Q[s',a'] - Q[s,a])
+''
+
+or, equivalently,
+
+''Q[s,a] ←(1-α) Q[s,a] + α(r+ γmaxa' Q[s',a']).''
+
+<code>
+controller Q-learning(S,A,γ,α) 
+2:           Inputs
+3:                     S is a set of states 
+4:                     A is a set of actions 
+5:                     γ the discount 
+6:                     α is the step size 
+7:           Local
+8:                     real array Q[S,A] 
+9:                     previous state s 
+10:                     previous action a 
+11:           initialize Q[S,A] arbitrarily 
+12:           observe current state s 
+13:           repeat
+14:                     select and carry out an action a 
+15:                     observe reward r and state s' 
+16:                     Q[s,a] ←Q[s,a] + α(r+ γmaxa' Q[s',a'] - Q[s,a]) 
+17:                     s ←s' 
+18:           until termination
+
+</code>
+
+
+http://artint.info/html/ArtInt_265.html
