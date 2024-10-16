@@ -1,3 +1,0 @@
-[http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html\]Systemctl 命令1](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html]Systemctl 命令1)
-[Systemctl
-命令2](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)

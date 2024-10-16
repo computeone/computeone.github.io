@@ -1,7 +1,0 @@
-球谐函数是拉普拉斯方程的球坐标系形式解的角度部分。在量子力学等领域广泛应用。
-
-![](../../media/graphic/spherical_harmonic.png)\
-\
-https:*www.yasrt.org/shlighting/\
-https:*basesandframes.files.wordpress.com/2016/05/spherical-harmonic-lighting-gdc-2003.pdf\
-https://zh.wikipedia.org/wiki/%E7%90%83%E8%B0%90%E5%87%BD%E6%95%B0\

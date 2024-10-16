@@ -1,7 +1,0 @@
-![](../../media/deeplearning/bayesian.png)
-
-![](../../media/deeplearning/bayesian1.png)
-
-\
-\
-<https://zh.wikipedia.org/wiki/%E8%B2%9D%E6%B0%8F%E7%B6%B2%E8%B7%AF>

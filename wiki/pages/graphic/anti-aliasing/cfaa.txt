@@ -1,7 +1,0 @@
-**可编程过滤抗锯齿**\\
-\\
-可编程过滤抗锯齿（Custom Filter Anti-Aliasing，简称CFAA）技术起源于AMD-ATI的R600家庭。简单地说CFAA就是扩大取样面积的MSAA，比方说之前的MSAA是严格选取物体边缘像素进行缩放的，而CFAA则可以通过驱动和谐灵活地选择对影响锯齿效果较大的像素进行缩放，以较少的性能牺牲换取平滑效果。显卡资源占用也比较小。\\
-目前最主流的是CSAA和CFAA应该是最实用、最有效率的全屏抗锯齿模式。它们不仅有良好的平滑效果，同时对显示资源占用率也不高。\\
-<code>
-https://www.nvidia.com/object/coverage-sampled-aa.html
-</code>

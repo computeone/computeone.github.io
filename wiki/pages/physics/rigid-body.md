@@ -1,2 +1,0 @@
-<https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics>
-<http://buildnewgames.com/broad-phase-collision-detection/>

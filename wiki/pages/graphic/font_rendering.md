@@ -1,7 +1,0 @@
-**字体渲染**
-
-\
-\
-https:*zhuanlan.zhihu.com/p/26217154\
-http:*www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf\
-<http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-11-2d-text/>
